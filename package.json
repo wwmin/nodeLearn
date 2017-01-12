@@ -1,0 +1,15 @@
+{
+  "name": "nodeLearn",
+  "version": "1.0.0",
+  "description": "node learn",
+  "author": "wwmin <wwei.min@163.com>",
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "nimble":"^0.0.2"
+  },
+  "devDependencies": {
+
+  }
+}
