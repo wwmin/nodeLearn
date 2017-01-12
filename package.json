@@ -4,12 +4,11 @@
   "description": "node learn",
   "author": "wwmin <wwei.min@163.com>",
   "private": true,
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-    "nimble":"^0.0.2"
+    "htmlparse": "0.0.8",
+    "nimble": "^0.0.2",
+    "request": "^2.79.0"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
