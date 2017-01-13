@@ -38,6 +38,19 @@ var server = http.createServer(function (req, res) {
         res.end('OK\n');
       }
       break;
+    case "PUT":
+      var path = url.parse(req.url).pathname;
+      var putData = path.slice(1).split('&');
+      for (let j = 0, jl = putData.length; j < jl; j++) {
+        var [key,value]=putData[j].split('=');
+        if (items[key]) {
+          items[key] = value;
+          continue;
+        }
+        res.statusCode = 400;
+        res.end("Invalid item key value");
+      }
+      res.end('OK\n');
   }
 });
 server.listen(3000);
