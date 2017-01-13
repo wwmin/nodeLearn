@@ -15,5 +15,9 @@ var server = http.createServer(function (req, res) {
    });*/
   //管道
   stream.pipe(res);
+  stream.on('error',function(err){
+    res.statusCode=500;
+    res.end('Internal Server Error');
+  })
 });
 server.listen(3000);
