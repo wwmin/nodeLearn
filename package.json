@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {},
   "dependencies": {
+    "formidable": "^1.0.17",
     "htmlparse": "0.0.8",
     "nimble": "^0.0.2",
     "request": "^2.79.0"
