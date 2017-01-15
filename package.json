@@ -8,6 +8,7 @@
   "dependencies": {
     "formidable": "^1.0.17",
     "htmlparse": "0.0.8",
+    "mongoose": "^4.7.6",
     "nimble": "^0.0.2",
     "request": "^2.79.0"
   },
