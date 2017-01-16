@@ -1,9 +1,9 @@
 var connect = require('connect');
-
-function logger(req, res, next) {
-  console.log('%s %s', req.method, req.url);
-  next();
-}
+var logger = require('./logger.js');
+// function logger(req, res, next) {
+//   console.log('%s %s', req.method, req.url);
+//   next();
+// }
 function hello(req, res) {
   res.setHeader('Content-Type', 'text/plain');
   res.end('hello world.');
@@ -40,7 +40,7 @@ function admin(req, res, next) {
   }
 }
 connect()
-  .use(logger)
+  .use(logger(':method :url'))
   .use('/admin', restrict)
   .use('/admin', admin)
   .use(hello)
