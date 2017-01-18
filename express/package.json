@@ -1,5 +1,5 @@
 {
-  "name": "photo_app",
+  "name": "express RESTfull API",
   "version": "1.0.0",
   "description": "photo app",
   "main": "index.js",
@@ -11,5 +11,16 @@
     "app"
   ],
   "author": "wwmin",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.2.0",
+    "superagent": "^3.3.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "mongo": "^0.1.0",
+    "mongoskin": "^2.1.0"
+  }
 }
